@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xukun.forever.xmjd.MainActivity"
+    android:orientation="vertical">
+
+
+    <com.xukun.forever.xmjd.view.NoScrollViewPager
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/vg_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_main"
+        ></com.xukun.forever.xmjd.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/rb_borrow"
+            style="@style/RadioButtonStyle"
+            android:text="借款"
+            android:drawableTop="@mipmap/ic_launcher"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_repayment"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="还款"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_personalcenter"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="个人中心"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="更多"
+            />
+    </RadioGroup>
+
+</RelativeLayout>
